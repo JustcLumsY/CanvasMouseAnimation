@@ -6,34 +6,26 @@ function changeView(selectedPage){
 }
 
 
+
+var isAnimateTrue = false;
+
 function changeStyle(changeBtn){
-    model.pressedBtn = changeBtn;
+    
+    if(model.pressedBtn == changeBtn)
+        return;
 
+    model.hasGeneratedArray = false;
+    model.pressedBtn = changeBtn;    
+
+   if(isAnimateTrue != true) {
+       isAnimateTrue = true;
+
+        animate();
+    }
+    
 }
-
-function changeBackground(BackgroundBubbles){
-    model.BackgroundBubbles = BackgroundBubbles;
-}
+    
 
 
 
 
-// function AddtoCart(wares){
-// //    console.log(wares)
-//     cartItemsNumber++;
-//     model.shoppingCart.push(wares)
-//     viewSelector();
-
-// }
-
-// function clearCart(){
-//     cartItemsNumber = 0;
-//     model.shoppingCart = [];
-//     viewSelector();
-// }
-
-
-// function LightDarkMode(){
-//     var element = document.body;
-//     element.classList.toggle("dark-mode");
-// }

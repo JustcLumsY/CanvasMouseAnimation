@@ -1,7 +1,6 @@
 const model = {
     currentPage : 'Home',
-    pressedBtn : 'Bubbles',
-    BackgroundBubbles : 'Background',
-    
+    pressedBtn : '',
+    hasGeneratedArray: false
 }
 
