@@ -37,6 +37,7 @@ function navBar() {
     <button class="FrozenBtn buttons changeStyleBtn" data-number='1' onclick='changeStyle("Frozen")'></button>
     <button class="changeStyleBtn buttons flameBtn" data-number='2' onclick='changeStyle("Flames")'></button>
     <button class="PoppingBtn buttons changeStyleBtn" data-number='3' onclick='changeStyle("Popping")'></button>
+    <button class="PoppingBtn buttons changeStyleBtn" data-number='4' onclick='changeStyle("Shape")'></button>
       
 
      

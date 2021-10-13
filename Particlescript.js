@@ -21,13 +21,14 @@ class Particle {
         if(this.size > 0.2) this.size -= 0.1;
     }
     draw(){
+        ctx.shadowOffsetX =2;
+ctx.shadowOffsetY = 2; 
+ctx.shadowBlur = 6;
         ctx.fillStyle = this.color;
-        // ctx.strokeStyle ='red';
-        // ctx.lineWidth = 5;
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.filter = 'none';
         ctx.fill();
-        // ctx.stroke();
     }
 }
 
@@ -46,8 +47,6 @@ function handleParticles(){
     }
 
     particleArray = [];
-
-    
     model.hasGeneratedArray = true;
 
     // if(model.pressedBtn == "Popping") return;

@@ -1,18 +1,18 @@
 *
 {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body
 {
-width:90%;
-margin:auto;
-min-width:600px;
-max-width:2000px;
-background-color: var(--bg-color);
-overflow: hidden;
+    width:90%;
+    margin:auto;
+    min-width:600px;
+    max-width:2000px;
+    background-color: var(--bg-color);
+    overflow: hidden;
 }
 
 
@@ -25,10 +25,9 @@ overflow: hidden;
     width: 100%;
     top: 0;
     left: 0;
-    
-      /* filter: blur(7px) contrast(5);    */
+     /* filter: blur(3px) contrast(2);  */
+      
 }
-
 
 
 #buttons
@@ -87,6 +86,10 @@ button::before
 .changeStyleBtn:nth-child(5)::before 
 {
     content: 'Poppin';
+}
+.changeStyleBtn:nth-child(6)::before 
+{
+    content: 'Shape';
 }
 
 .FrozenBtn:hover::before 
@@ -190,7 +193,7 @@ button::before
     margin-left: 2vw;
     top: 5vh;
     border:  .2em solid #fff ;
-    /* background-image: url(https://th.bing.com/th/id/R.8941f128f50b82b0e9add453165f9cf4?rik=WZDZLfnr1SrfZw&pid=ImgRaw&r=0); */
+    
 }
 
 

@@ -5,7 +5,7 @@ class Frozen {
        
         this.x = mouse.x;
         this.y = mouse.y;
-    
+        
         this.size = Math.random() * 8 + 1;
         this.speedX = Math.random() * 3 - 1.5;
         this.speedY = Math.random() * 5 - 1.5;
@@ -20,12 +20,10 @@ class Frozen {
     draw()
     {
         ctx.fillStyle = this.color;
-        // ctx.strokeStyle ='red';
-        // ctx.lineWidth = 5;
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.filter = 'none';
         ctx.fill();
-        // ctx.stroke();
     }
 }
 
