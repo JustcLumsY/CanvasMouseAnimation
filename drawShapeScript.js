@@ -5,12 +5,12 @@ const n = 10;
 function drawShape(x, y, radius, inset, n)
 {
     
-    ctx.fillStyle = '';
+  ctx.fillStyle = 'red';
     ctx.lineWidth = 2;
     ctx.strokeStyle = 'lightblue';
-    // ctx.shadowOffsetX = 2;
-    // ctx.shadowOffsetY = 2; 
-    // ctx.shadowBlur = 6;
+     ctx.shadowOffsetX = 2;
+     ctx.shadowOffsetY = 2; 
+     ctx.shadowBlur = 6;
     
     ctx.shadowColor = 'black';
     ctx.beginPath();
