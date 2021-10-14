@@ -81,7 +81,7 @@ button::before
 }
 .changeStyleBtn:nth-child(4)::before 
 {
-    content: 'Flames';
+    content: 'Something';
 }
 .changeStyleBtn:nth-child(5)::before 
 {
@@ -102,10 +102,10 @@ button::before
 
 .FrozenBtn:hover 
 {
-    box-shadow:  10px 10px 15px rgb(0, 174, 255),  -10px -10px 15px rgb(0, 174, 255),  -10px -10px 15px rgb(0, 174, 255), 
-    -10px -10px 15px rgb(0, 174, 255), 10px -10px 15px rgb(0, 174, 255);
-    border: 5px solid rgb(0, 174, 255);
-    background: rgb(0, 174, 255),
+    color: rgb(0, 0, 0);
+    box-shadow: inset 10px 10px 15px rgb(0, 174, 255), inset -10px -10px 15px rgb(0, 174, 255), inset -10px -10px 15px rgb(0, 174, 255), inset 10px -10px 15px rgb(0, 174, 255);
+    background: rgb(8, 237, 245);
+    text-shadow: 5px 5px 5px rgb(12, 25, 31), 5px 5px 5px rgb(20, 35, 43), 5px 5px 5px rrgb(3, 9, 12) 5px 5px 5px rgb(11, 23, 29),
 }
 
 .flameBtn:hover::before 
@@ -133,6 +133,52 @@ button::before
 }
 
 .BubblesBtn:hover 
+{
+    color: rgb(0, 0, 0);
+    box-shadow: inset 10px 10px 15px rgb(0, 174, 255), inset -10px -10px 15px rgb(0, 174, 255), inset -10px -10px 15px rgb(0, 174, 255), inset 10px -10px 15px rgb(0, 174, 255);
+    background: rgb(8, 237, 245);
+    text-shadow: 5px 5px 5px rgb(12, 25, 31), 5px 5px 5px rgb(20, 35, 43), 5px 5px 5px rrgb(3, 9, 12) 5px 5px 5px rgb(11, 23, 29),
+}
+
+.SomethingBtn:hover::before 
+{
+    color: rgb(0, 0, 0);
+    box-shadow: inset 10px 10px 15px rgb(0, 174, 255), inset -10px -10px 15px rgb(0, 174, 255), inset -10px -10px 15px rgb(0, 174, 255), inset 10px -10px 15px rgb(0, 174, 255);
+    background: rgb(8, 237, 245);
+    text-shadow: 5px 5px 5px rgb(12, 25, 31), 5px 5px 5px rgb(20, 35, 43), 5px 5px 5px rrgb(3, 9, 12) 5px 5px 5px rgb(11, 23, 29),
+}
+
+.SomethingBtn:hover 
+{
+    color: rgb(0, 0, 0);
+    box-shadow: inset 10px 10px 15px rgb(0, 174, 255), inset -10px -10px 15px rgb(0, 174, 255), inset -10px -10px 15px rgb(0, 174, 255), inset 10px -10px 15px rgb(0, 174, 255);
+    background: rgb(8, 237, 245);
+    text-shadow: 5px 5px 5px rgb(12, 25, 31), 5px 5px 5px rgb(20, 35, 43), 5px 5px 5px rrgb(3, 9, 12) 5px 5px 5px rgb(11, 23, 29),
+}
+.PoppingBtn:hover::before 
+{
+    color: rgb(0, 0, 0);
+    box-shadow: inset 10px 10px 15px rgb(0, 174, 255), inset -10px -10px 15px rgb(0, 174, 255), inset -10px -10px 15px rgb(0, 174, 255), inset 10px -10px 15px rgb(0, 174, 255);
+    background: rgb(8, 237, 245);
+    text-shadow: 5px 5px 5px rgb(12, 25, 31), 5px 5px 5px rgb(20, 35, 43), 5px 5px 5px rrgb(3, 9, 12) 5px 5px 5px rgb(11, 23, 29),
+}
+
+.PoppingBtn:hover 
+{
+    color: rgb(0, 0, 0);
+    box-shadow: inset 10px 10px 15px rgb(0, 174, 255), inset -10px -10px 15px rgb(0, 174, 255), inset -10px -10px 15px rgb(0, 174, 255), inset 10px -10px 15px rgb(0, 174, 255);
+    background: rgb(8, 237, 245);
+    text-shadow: 5px 5px 5px rgb(12, 25, 31), 5px 5px 5px rgb(20, 35, 43), 5px 5px 5px rrgb(3, 9, 12) 5px 5px 5px rgb(11, 23, 29),
+}
+.ShapeBtn:hover::before 
+{
+    color: rgb(0, 0, 0);
+    box-shadow: inset 10px 10px 15px rgb(0, 174, 255), inset -10px -10px 15px rgb(0, 174, 255), inset -10px -10px 15px rgb(0, 174, 255), inset 10px -10px 15px rgb(0, 174, 255);
+    background: rgb(8, 237, 245);
+    text-shadow: 5px 5px 5px rgb(12, 25, 31), 5px 5px 5px rgb(20, 35, 43), 5px 5px 5px rrgb(3, 9, 12) 5px 5px 5px rgb(11, 23, 29),
+}
+
+.ShapeBtn:hover 
 {
     color: rgb(0, 0, 0);
     box-shadow: inset 10px 10px 15px rgb(0, 174, 255), inset -10px -10px 15px rgb(0, 174, 255), inset -10px -10px 15px rgb(0, 174, 255), inset 10px -10px 15px rgb(0, 174, 255);

@@ -5,7 +5,7 @@ console.log(ctx);
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
- ctx.globalCompositeOperation = 'destination-over';
+ //ctx.globalCompositeOperation = 'destination-over';
 let hue = 0;
 
 window.addEventListener('resize', function(){
@@ -28,25 +28,30 @@ function animate()
     }; 
 
     if (model.pressedBtn == 'Shape')
-    {ctx.clearRect(0, 0, canvas.width, canvas.height);
-        drawShape();
-    }
+    { 
+       // ctx.clearRect(0, 0, canvas.width, canvas.height);
+        handleShape();
+       
+    };
     
-    if (model.pressedBtn == 'Flames') 
+    if (model.pressedBtn == 'Something') 
     {
+        
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        createFlames();
         handleFlames();
+        
         
     };
 
     if (model.pressedBtn == 'Frozen') 
-    { 
+    {  
+       
+        
         //ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.fillStyle = 'rgba(0,0,0,0.0)';
+        ctx.fillStyle = 'rgba(0,0,0,0.01)';
         ctx.fillRect(0, 0, canvas.width, canvas.height);        
         handleFrozen();
-        
+      
     };
     
 

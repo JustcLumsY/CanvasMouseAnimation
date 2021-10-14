@@ -1,7 +1,7 @@
 let particleArray = [];
 
 class Particle {
-    constructor(x, y, size) {
+    constructor() {
       if(model.pressedBtn == 'Bubbles'){  
         this.x = mouse.x;
         this.y = mouse.y;
@@ -20,14 +20,18 @@ class Particle {
         this.y += this.speedY;
         if(this.size > 0.2) this.size -= 0.1;
     }
-    draw(){
-        ctx.shadowOffsetX =2;
-ctx.shadowOffsetY = 2; 
-ctx.shadowBlur = 6;
+    draw()
+    {
+        resetCtx();
+        
+        ctx.shadowOffsetX = -1;
+        ctx.shadowOffsetY = -1;
+        ctx.shadowBlur = 2;
+        ctx.shadowColor = 'white';
+        ctx.filter = 'none';
         ctx.fillStyle = this.color;
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.filter = 'none';
         ctx.fill();
     }
 }

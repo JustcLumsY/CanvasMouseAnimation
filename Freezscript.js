@@ -1,13 +1,10 @@
 let frozenArray = [];
-
 class Frozen {
-    constructor(x, y, size) {
-       
+    constructor() {
         this.x = mouse.x;
         this.y = mouse.y;
-        
-        this.size = Math.random() * 8 + 1;
-        this.speedX = Math.random() * 3 - 1.5;
+        this.size = Math.random() * 7 + 1;
+        this.speedX = Math.random() * 4 - 1.5;
         this.speedY = Math.random() * 5 - 1.5;
         this.color = 'hsl(188, 97%, 76%)';
      }
@@ -19,17 +16,23 @@ class Frozen {
     }
     draw()
     {
+        // ctx.shadowOffsetX = 1;
+        // ctx.shadowOffsetY = 1;
+        // ctx.shadowBlur = 10;
+        // ctx.shadowColor = 'black';
         ctx.fillStyle = this.color;
+        ctx.filter = 'none';
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.filter = 'none';
         ctx.fill();
     }
 }
 
 function handleFrozen() 
 {    
+    
     if(model.hasGeneratedArray){
+        resetCtx();
         for (let i = 0; i < frozenArray.length; i++){
             frozenArray[i].update();
             frozenArray[i].draw();
@@ -40,14 +43,14 @@ function handleFrozen()
         }
         return;    
     }  
-  
-
+    
     frozenArray = [];
     model.hasGeneratedArray = true;
 
     // if(model.pressedBtn == "Frozen") return;
 
     canvas.addEventListener('mousemove',  function(event){
+        
         mouse.x = event.x;
         mouse.y = event.y;
         for (let i = 0; i < 15; i++)

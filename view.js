@@ -35,9 +35,9 @@ function navBar() {
     </div>
     <button class="BubblesBtn buttons changeStyleBtn" data-number='0' onclick='changeStyle("Bubbles")'></button>
     <button class="FrozenBtn buttons changeStyleBtn" data-number='1' onclick='changeStyle("Frozen")'></button>
-    <button class="changeStyleBtn buttons flameBtn" data-number='2' onclick='changeStyle("Flames")'></button>
+    <button class="changeStyleBtn buttons SomethingBtn" data-number='2' onclick='changeStyle("Something")'></button>
     <button class="PoppingBtn buttons changeStyleBtn" data-number='3' onclick='changeStyle("Popping")'></button>
-    <button class="PoppingBtn buttons changeStyleBtn" data-number='4' onclick='changeStyle("Shape")'></button>
+    <button class="ShapeBtn buttons changeStyleBtn" data-number='4' onclick='changeStyle("Shape")'></button>
       
 
      
