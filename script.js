@@ -8,12 +8,14 @@ canvas.height = window.innerHeight;
  //ctx.globalCompositeOperation = 'destination-over';
 let hue = 0;
 
-window.addEventListener('resize', function(){
+window.addEventListener('resize', function()
+{
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 });
 
-const mouse = {
+const mouse = 
+{
     x: undefined,
     y: undefined,
 }
@@ -37,8 +39,8 @@ function animate()
     if (model.pressedBtn == 'Something') 
     {
         
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        handleFlames();
+       ctx.clearRect(0, 0, canvas.width, canvas.height);
+        handleFloatingBubbles();
         
         
     };

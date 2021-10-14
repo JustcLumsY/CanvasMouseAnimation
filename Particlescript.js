@@ -36,7 +36,8 @@ class Particle {
     }
 }
 
-function handleParticles(){
+function handleParticles()
+{
     
     if(model.hasGeneratedArray){
         for (let i = 0; i < particleArray.length; i++){
@@ -87,7 +88,8 @@ function handleParticles(){
     });   
 }
 
-function createParticle(){
+function createParticle()
+{
     
     let size = Math.random() * 15 + 20;
     let x = canvas.height/2;

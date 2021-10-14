@@ -33,7 +33,7 @@ function resetCtx()
         ctx.shadowBlur = 0;
         ctx.shadowColor = 0;
         ctx.filter = 'none';
-        ctx.fillStyle = 0;
+        ctx.fillStyle = '';
         ctx.lineWidth = 0;
         ctx.strokeStyle = '';
         // ctx.this.color = '';

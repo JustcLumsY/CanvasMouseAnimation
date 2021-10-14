@@ -49,7 +49,8 @@ function handleFrozen()
 
     // if(model.pressedBtn == "Frozen") return;
 
-    canvas.addEventListener('mousemove',  function(event){
+    canvas.addEventListener('mousemove',  function(event)
+    {
         
         mouse.x = event.x;
         mouse.y = event.y;
@@ -57,7 +58,8 @@ function handleFrozen()
         frozenArray.push(new Frozen());
     });
 
-    app.addEventListener('mousemove',  function(event){
+    app.addEventListener('mousemove',  function(event)
+    {
         mouse.x = event.x;
         mouse.y = event.y;
         for (let i = 0; i < 15; i++)

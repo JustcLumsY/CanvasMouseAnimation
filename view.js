@@ -1,11 +1,13 @@
-function viewSelector() {
+function viewSelector() 
+{
     let html = ``;
     html = navBar();
     
     const app = document.getElementById('app');
 
 
-    switch (model.currentPage) {
+    switch (model.currentPage) 
+    {
         case 'Home':
             html += homeView();
            break;
@@ -25,7 +27,8 @@ function viewSelector() {
 }
 
 
-function navBar() {
+function navBar() 
+{
     let html = /*html*/`
     <div id="navPageContainer">
     
@@ -48,7 +51,8 @@ function navBar() {
 }
 
 
-function homeView() {
+function homeView() 
+{
     
     let html = /*html*/`
     
@@ -66,7 +70,8 @@ function homeView() {
     
 }
 
-function contactView() {
+function contactView() 
+{
     let html = /*html*/`
     <div id="homeContainer">
         <div id="homeInnerContainer">
@@ -78,7 +83,8 @@ function contactView() {
     return html;
 }
 
-function noPageFound() {
+function noPageFound() 
+{
     let html = /*html*/`
     404! Page not found!`;
     return html;
